@@ -1,0 +1,11 @@
+#cloud-config
+ssh_authorized_keys:
+  - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDbgUUxtEZ9AOK41m8R0a1kTUrdFx5CPs8g7YQqZTsYioNIT1r2IqjfpYbZ6XZiydm43s5hXV0UshdMB7xBhYIGu7YVJaW4ruByeE/0H4pBV3fFOv9G+ZKcoQdv7Rp/Svhmu69eKoKxVuCe7YdyOWS6qJfeKNVwnSSidBKMhSFux21uopprnJGvQWaIDEFpjdLw3vynIVcb5kX3T1l19JVSwl9PbRQXa2Mf1JCrJYNlLvZIJyfsfxa7KzYVy51NCz2Zl8seVFl/bkgI83gCV+zcb/NN5j/GueNZkySKNG/ABpb51S4ow+S7Q+bRv5qaa+kLxT8M5FOcDHX1Jr7eM764NWIbrwGRTOBWh8N/ryJ8eqK8GYOwoWxOBmxxORvPk7FWNfUNqNUzmSufAJ1p5GvCIlbDSlI4BeYTveYh+5Tsaw7lnlOFw1ofMZM1q/ya7iVFeKWWcjccwkcrzUsA3897CCqZvnE6+8vWYX2RSEy8Qb9/7FGdI04zD5eDaD17L8s= alexa@SneakyPC
+rancher:
+  network:
+    interfaces:
+      eth0:
+        address: 10.0.2.15/24
+        dhcp: false
+      eth1:
+        dhcp: true
